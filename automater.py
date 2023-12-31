@@ -1,11 +1,12 @@
-import preprocessor,postprocessor,objcode, end,jsonproccesor
 
-repeat = 3
+import jsonproccesor,codeprocessor
+
+repeat = jsonproccesor.config['copies']
 babystep= jsonproccesor.config['babystep']
-precode = preprocessor.preCode
-mainobj = objcode.objcode
-postcode = postprocessor.postcode
-endCode = end.endCode
+precode = codeprocessor.preCode
+mainobj = codeprocessor.objcode
+postcode = codeprocessor.postcode
+endCode = codeprocessor.endCode
 
 f= open("main.gcode","w+")
 for index in range(repeat):
