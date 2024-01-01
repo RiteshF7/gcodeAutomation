@@ -95,15 +95,23 @@ if __name__ == "__main__":
     FILE_PATH = "auto.gcode"  
 
  # Replace with your desired GCODE command
-    GCODE_COMMAND = "G1 X1.1 Y0.0 Z0 F1500.0 E15" 
+    GCODE_COMMAND = """
+G0 Z50
+G0 X1 Y1 
+G0 X0 Y200 
+G0 X117 Y200 Z1
+G0 X117 Y0 Z1 
+G0 X117 Y200 Z1 
+G0 X117 Y0 Z1 """
+    #GCODE_COMMAND = "G28 " 
 
     
     
     # Start the print job
-    start_print(API_KEY, OCTOPRINT_URL, FILE_PATH)
+   # start_print(API_KEY, OCTOPRINT_URL, FILE_PATH)
 
     # Optionally, send a GCODE command
-    #send_gcode(API_KEY, OCTOPRINT_URL, GCODE_COMMAND)
+    send_gcode(API_KEY, OCTOPRINT_URL, GCODE_COMMAND)
 
     # Optionally, stop the print job after a certain duration or based on some condition
     #stop_print(API_KEY, OCTOPRINT_URL)
