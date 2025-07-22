@@ -1,5 +1,7 @@
 # Bulk 3D Print Automation with OctoPrint API
 
+![Alt text](https://raw.githubusercontent.com/RiteshF7/gcodeAutomation/refs/heads/main/bannerimage.png)
+
 This project automates batch 3D printing by generating dynamic G-code files and controlling OctoPrint-enabled printers via REST API. It supports configurable repeat printing, Z-axis offsets, and custom temperature settings for high-volume production.
 
 ## Features
@@ -40,10 +42,18 @@ Adjust values in `config.json` to suit your printer setup:
 }
 
 ## How It Works
+
+![Alt text](https://raw.githubusercontent.com/RiteshF7/gcodeAutomation/refs/heads/main/imagetwo.png)
+
 - The script generates repeated G-code segments using precode, mainobj, and postcode.
 - It adds Z-height offset per iteration using lineheight + index * babystep.
 - The final G-code is written to gcodes/main.gcode.
 - Optional OctoPrint API commands allow you to start or cancel prints and send G-code directly.
+
+## Config.json Use
+
+![Alt text](https://raw.githubusercontent.com/RiteshF7/gcodeAutomation/refs/heads/main/imagethree.png)
+
 
 
 ## Example Usage
