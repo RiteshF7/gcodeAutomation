@@ -14,15 +14,16 @@ This project automates batch 3D printing by generating dynamic G-code files and 
 
 ## Project Structure
 
+```text
 project-root/
 ├── gcodes/
-│   └── main.gcode               
-├── config.json                  
-├── main.py                      
-├── jsonproccesor.py             
-├── codeprocessor.py             
-└── README.md                    
-
+│   └── main.gcode
+├── config.json
+├── main.py
+├── jsonproccesor.py
+├── codeprocessor.py
+└── README.md
+```
 
 ## Configuration
 
