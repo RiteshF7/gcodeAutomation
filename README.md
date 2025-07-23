@@ -16,12 +16,12 @@ This project automates batch 3D printing by generating dynamic G-code files and 
 
 project-root/
 ├── gcodes/
-│   └── main.gcode               # Auto-generated bulk G-code file
-├── config.json                  # Centralized printer config and job parameters
-├── main.py                      # Main automation entrypoint
-├── jsonproccesor.py             # Parses config and provides structured parameters
-├── codeprocessor.py             # Handles G-code segments: pre, post, and object code
-└── README.md                    # Documentation and usage guide
+│   └── main.gcode               
+├── config.json                  
+├── main.py                      
+├── jsonproccesor.py             
+├── codeprocessor.py             
+└── README.md                    
 
 
 ## Configuration
